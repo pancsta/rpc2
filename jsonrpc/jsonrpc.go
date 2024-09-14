@@ -4,14 +4,14 @@
 // Use []interface{} as the type of argument when sending and receiving methods.
 //
 // Positional arguments example:
-// 	server.Handle("add", func(client *rpc2.Client, args []interface{}, result *float64) error {
-// 		*result = args[0].(float64) + args[1].(float64)
-// 		return nil
-// 	})
+//
+//	server.Handle("add", func(client *rpc2.Client, args []interface{}, result *float64) error {
+//		*result = args[0].(float64) + args[1].(float64)
+//		return nil
+//	})
 //
 //	var result float64
-// 	client.Call("add", []interface{}{1, 2}, &result)
-//
+//	client.Call("add", []interface{}{1, 2}, &result)
 package jsonrpc
 
 import (
@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/cenkalti/rpc2"
+	"github.com/pancsta/rpc2"
 )
 
 type jsonCodec struct {

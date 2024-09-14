@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cenkalti/rpc2"
+	"github.com/pancsta/rpc2"
 )
 
 const (
